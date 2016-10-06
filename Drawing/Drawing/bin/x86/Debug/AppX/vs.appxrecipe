@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Files\GitHub\CSharp\Drawing\Drawing\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-10-05T20:19:02.486</Modified>
+      <Modified>2016-10-06T19:21:42.035</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Files\GitHub\CSharp\Drawing\Drawing\bin\x86\Debug\Drawing.exe">
       <PackagePath>entrypoint\Drawing.exe</PackagePath>
-      <Modified>2016-10-05T20:18:56.898</Modified>
+      <Modified>2016-10-06T19:21:36.239</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\dporte25\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -512,11 +512,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Files\GitHub\CSharp\Drawing\Drawing\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-10-05T20:19:01.367</Modified>
+      <Modified>2016-10-06T19:21:40.930</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Files\GitHub\CSharp\Drawing\Drawing\bin\x86\Debug\Core\Drawing.exe">
       <PackagePath>Drawing.exe</PackagePath>
-      <Modified>2016-10-05T20:19:02.461</Modified>
+      <Modified>2016-10-06T19:21:42.012</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
