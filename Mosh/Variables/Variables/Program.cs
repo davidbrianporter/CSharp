@@ -10,7 +10,12 @@ namespace Variables
     {
         static void Main(string[] args)
         {
-             Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
+            int i = 300;
+            byte b = (byte)i;
+
+            Console.WriteLine("initial int: {0} final byte: {1}", i, b);
+
+            Console.WriteLine("{0} {1}", byte.MinValue, byte.MaxValue);
             Console.WriteLine("{0} {1}", float.MinValue, float.MaxValue);
             const float Pi = 3.14f;
             Console.WriteLine(Pi);
