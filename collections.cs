@@ -1,6 +1,13 @@
 using System;
 using System.Collections.Generic;
 
+public interface IEnumerator
+{
+    bool MoveNext();
+    object Current { get; }
+    void Reset();
+}
+
 public class run
 {
 
@@ -18,5 +25,13 @@ public class run
 	{
             Console.WriteLine(n);
 	}
+
+string s = "Hello";
+
+foreach (char c in s)
+{
+    Console.Write(c + ".");
+}
+
     }
 }
