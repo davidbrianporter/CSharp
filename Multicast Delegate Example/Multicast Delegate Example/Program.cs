@@ -8,12 +8,33 @@ namespace Multicast_Delegate_Example
 {
     class Program
     {
+        delegate void del(int x, int y);
+
         static void Main(string[] args)
         {
             Mark m = new Mark();
-            m.AddNumbers(3, 3);
-            m.MultiplyNumbers(3, 3);
-            m.SubtractNumbers(3, 4);
+
+            del d;
+            d = m.AddNumbers;
+            Console.WriteLine("Invoking delegate d with one target:");
+            d(6, 5);
+            Console.WriteLine();
+
+            d += m.MultiplyNumbers;
+            Console.WriteLine("Invoking delegate d with two targets:");
+            d(6, 5);
+            Console.WriteLine();
+
+            d += m.SubtractNumbers;
+            Console.WriteLine("Invoking delegate d with two targets:");
+            d(6, 5);
+            Console.WriteLine();
+
+            d -= m.MultiplyNumbers;
+            Console.WriteLine("Invoking delegate d without multiply target:");
+            d(6, 5);
+            Console.WriteLine();
+
         }
     }
 
