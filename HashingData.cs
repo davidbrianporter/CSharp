@@ -20,6 +20,28 @@ namespace Hashing_Example
             string pwh = hd.CreateHash(pw);
 
             Console.WriteLine(pwh);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("When the user logs in later, we'll get a password ");
+            Console.WriteLine("and compare it to the previous hash...");
+
+            Console.WriteLine("Enter the original password: ");
+            string pw2 = Console.ReadLine();
+
+            string pwh2 = hd.CreateHash(pw2);
+            Console.WriteLine();
+            Console.WriteLine("First hash : " + pwh);
+            Console.WriteLine("Second hash: " + pwh2);
+
+            if (pwh == pwh2)
+            {
+                Console.WriteLine("Files match.");
+            }
+            else
+            {
+                Console.WriteLine("NO Match.");
+            }
         }
     }
 
