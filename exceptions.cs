@@ -7,7 +7,14 @@ namespace nspc
     {
     public static void Main()
 	{
-	    Console.WriteLine("it worked?");
+        try 
+        {
+           int t = 1/0;
+        } catch {
+            Console.WriteLine("exception found");
+        } finally {
+            Console.WriteLine("finally, it worked?");            
+        }
 	}
     }
 }
