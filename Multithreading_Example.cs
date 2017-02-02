@@ -12,20 +12,26 @@ namespace Multithreading_Example
         // the Main thread
         static void Main(string[] args)
         {
-            Thread t = new Thread(WriteX);
-            t.Start();
-            Thread t2 = new Thread(Writek);
-            t2.Start();
+            Thread t0 = new Thread(WriteX);
 
-            for (int i = 0; i < 100; i++)
-            {
-                Console.Write(".");
-            }
+        
+            
+            Thread t2 = new Thread(Writek);
+
+            //Thread t3 = new Thread( () => Console.WriteLine("hi"));
+
+            //t3.Start();
+            t2.Start();
+            t0.Start();
+            // for (int i = 0; i < 1000; i++)
+            // {
+            //     Console.Write(".");
+            // }
         }
 
         static void WriteX() 
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
             {
                 Console.Write("x");             
             }
@@ -33,9 +39,9 @@ namespace Multithreading_Example
         
         static void Writek()
         {
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 1000; i++)
             {
-                Console.WriteLine("k");
+                Console.Write("k");
             }
         }
 

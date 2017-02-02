@@ -31,13 +31,15 @@ namespace Async_and_Await_Example
             Console.WriteLine("Counting to 50 is completed...");
         }
         
-        private static async Task<string> CountToFifty()
+        private async Task<string> CountToFifty()
         {
             int counter;
             for (counter = 0; counter < 51; counter++)
             {
                 Console.WriteLine("BG thread: " + counter);
             }
+
+            return ("Counter = " + counter);
         }
     }
 }
