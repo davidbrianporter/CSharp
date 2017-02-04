@@ -12,21 +12,22 @@ namespace Multithreading_Example
         // the Main thread
         static void Main(string[] args)
         {
-            Thread t0 = new Thread(WriteX);
+            Thread tx = new Thread(WriteX);
 
-        
+            Thread tdot = new Thread(WriteDot);        
             
-            Thread t2 = new Thread(Writek);
+            Thread tdash = new Thread(WriteDash);
 
             //Thread t3 = new Thread( () => Console.WriteLine("hi"));
 
             //t3.Start();
-            t2.Start();
-            t0.Start();
-            // for (int i = 0; i < 1000; i++)
-            // {
-            //     Console.Write(".");
-            // }
+            tx.Start();
+            tdot.Start();
+            if (tx.IsAlive)
+            {
+                tdash.Start();
+            }
+
         }
 
         static void WriteX() 
@@ -37,11 +38,19 @@ namespace Multithreading_Example
             }
         }
         
-        static void Writek()
+        static void WriteDot()
         {
             for (int i = 0; i < 1000; i++)
             {
-                Console.Write("k");
+                Console.Write(".");
+            }
+        }
+
+        static void WriteDash()
+        {
+            for (int i = 0; i < 1000; i++)
+            {
+                Console.Write("-");
             }
         }
 
